@@ -1,0 +1,22 @@
+const sections = document.querySelectorAll('section');
+const nextButtons = document.querySelectorAll('.nextButton');
+let currentSectionIndex = 0;
+
+function showSection(index) {
+    sections.forEach((section, i) => {
+        section.classList.remove('active');
+        if (i === index) {
+            section.classList.add('active');
+        }
+    });
+}
+
+nextButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        currentSectionIndex = index + 1;
+        if (currentSectionIndex >= sections.length) {
+            currentSectionIndex = 0;
+        }
+        showSection(currentSectionIndex);
+    });
+});
