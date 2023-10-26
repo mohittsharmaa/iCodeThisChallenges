@@ -1,0 +1,156 @@
+/* Add CSS here */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(73, 79, 85, 0.677);
+    width: 325px;
+    height: auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upper__div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.profile__picture{
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.bell__icon , .profile__picture{
+    cursor: pointer
+}
+
+.lower__div {
+    border-radius: 5px;
+    background-color: rgba(90, 101, 111, 0.677);
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.profile__area {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.profile__button {
+    background-color: orange;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: x-small;
+}
+
+.profile_area__details p {
+    color: grey;
+    font-size: x-small;
+    margin: 4px;
+    margin-left: 0;
+}
+
+.profile_area__details h3 {
+    font-weight: 600;
+}
+
+.profile_area__profile_picture {
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.emails {
+    display: flex;
+    gap: 10px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.emails h3 {
+    font-weight: 600;
+}
+
+.emails p {
+    color: grey;
+    font-size: x-small;
+    margin: 2px;
+    margin-left: 0;
+}
+
+.seperator {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(107, 105, 105);
+    margin: 10px 0;
+}
+
+.profile__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.logout__area{
+    display: flex;
+    justify-content: space-between;
+}
+.plus_btn{
+    color: rgb(164, 162, 162);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(61, 60, 60);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.signout_btn{
+    color: rgb(164, 162, 162);
+    font-size: small;
+    border: 1px solid black;
+    padding: 3px 30px 3px 30px;
+}
+
+.bell_notification{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background-color: azure;
+    border-radius: 6px;
+    display: none;
+    padding: 7px;
+    text-align: center;
+}
