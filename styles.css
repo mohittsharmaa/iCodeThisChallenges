@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    margin: 45px;
+}
+
+section{
+    height:auto;
+    width:290px;
+    border-radius: 5px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 29px;
+    box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.1);
+}
+.image__area{
+    width: auto;
+    height: 120px;
+    background-color: rgb(115, 133, 127);
+    position: relative;
+}
+.image__area::after {
+    content: "Image goes here";
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform : translate(-50%,-50%)
+}
+.written__area {
+    text-align: center;
+}
+h1{
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.lower__area{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.skip_btn{
+    font-size: smaller;
+    color: grey;
+}
+.next_btn{
+    font-size: x-large;
+    height: 20px;
+    width: 20px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom-right-radius: 8px;
+}
+
+.next_btn_char{
+    margin-top: -2px;
+}
+.getStarted_btn_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.getStarted_btn{
+    background-color: orange;
+    width: 70%;
+    color: white;
+    padding: 15px;
+    border-bottom-right-radius: 8px;
+}
+section {
+    display: none;
+}
+
+.active {
+    display: block;
+}
